@@ -56,25 +56,29 @@ the username can be anything, and the password is your <strong>real</strong> pri
 the normal, decoy and real folders, download files, and upload new ones.</p>
 
 <h3>Add files</h3>
-<p>In the Photos, Videos, Audio or Documents tab, tap <strong>+</strong> and choose what to import. Select
+<p>In the Photos, Videos or Audio tab, tap <strong>+</strong> and choose what to import. The Documents tab has no
+import button — documents arrive through the File Sharing server described above. Use
 <em>Select</em> to delete items or move them between the real and decoy areas.</p>
 
 <h2>Frequently Asked Questions</h2>
 
 <h3>I forgot my password — can it be recovered?</h3>
-<p>No. Passwords are stored only as irreversible hashes on your device, so nobody — including us — can recover them.
-You can delete and reinstall the app to set a new password, but everything stored in the app will be deleted with it.</p>
+<p>No. Passwords are kept in the iOS Keychain on your device, and there is no way to read them back out — not even for
+us. Note that deleting and reinstalling the app does <strong>not</strong> clear them either: iOS keeps Keychain items
+when an app is removed, so the old password will still be asked for. Please keep your passwords somewhere safe.</p>
 
 <h3>Where are my files stored? Are they uploaded anywhere?</h3>
-<p>Entirely on your device, inside the app's private storage. Nothing is uploaded to any server of ours.
-See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+<p>Entirely on your device, inside the app's private storage, and excluded from iCloud and computer backups. Nothing
+is uploaded to any server of ours. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
 
 <h3>Why do I see ads, and can I turn off personalised ads?</h3>
 <p>The app is supported by banner ads from Google AdMob. You can turn off personalised ads in iOS
 <em>Settings → Privacy &amp; Security → Tracking</em>. Ads will still appear, but they will not be personalised.</p>
 
 <h3>What happens if I delete the app?</h3>
-<p>All content and passwords stored in the app are removed from your device. The built-in HTTP server stops as well.</p>
+<p>The files you added are removed from your device, and the built-in HTTP server stops. Your passwords and entry key
+stay in the iOS Keychain — iOS does not clear them when an app is deleted — so set them up again or change them from
+inside the app if you reinstall it.</p>
 
 <footer>
 <p><a href="privacy.html">Privacy Policy</a></p>
