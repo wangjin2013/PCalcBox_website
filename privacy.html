@@ -37,6 +37,10 @@ not synced to iCloud and are not included in backups.</p>
       network browse and upload files. It listens on your local network only, and every request must be
       authenticated with your real privacy password.</li>
   <li><strong>App Tracking Transparency</strong> — used for advertising, described below.</li>
+  <li><strong>Face ID</strong> — used only as a confirmation step before the recovery command that erases the Hidden
+      area and resets the passwords (see <em>Data Retention and Deletion</em>). The app never receives or stores face
+      data; iOS only tells it whether verification succeeded. Where Face ID is unavailable, the device passcode is
+      used instead.</li>
 </ul>
 <p>Nothing else is requested. Photos, videos and audio are imported through the system pickers, which hand the app only
 the items you choose — so it never asks for access to your photo library, and it never uses the microphone.</p>
@@ -66,6 +70,9 @@ and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
 Passwords and the entry key live in the iOS Keychain, which iOS does <em>not</em> clear when an app is deleted — they
 stay on the device until you change or remove them in the app, and they are never restored onto another device.
 Because we never receive your content, there is nothing for us to delete on a server.</p>
+<p>If you have lost the real password, the app's recovery command erases the Hidden area and clears both passwords so
+you can set up new ones. It runs only after you confirm it and authenticate as the device owner (Face ID, Touch ID or
+the device passcode), and it never touches the Normal or Fake areas.</p>
 
 <h2>Children's Privacy</h2>
 <p>PCalcBox is not directed to children under 13 (or the minimum age that applies in your country), and we do not

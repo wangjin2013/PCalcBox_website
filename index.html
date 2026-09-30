@@ -63,9 +63,21 @@ import button — documents arrive through the File Sharing server described abo
 <h2>Frequently Asked Questions</h2>
 
 <h3>I forgot my password — can it be recovered?</h3>
-<p>No. Passwords are kept in the iOS Keychain on your device, and there is no way to read them back out — not even for
-us. Note that deleting and reinstalling the app does <strong>not</strong> clear them either: iOS keeps Keychain items
-when an app is removed, so the old password will still be asked for. Please keep your passwords somewhere safe.</p>
+<p>Passwords themselves cannot be read back out — not even by us. But there is a way out if you have forgotten your
+<strong>real</strong> password, so that a vault you can no longer open does not stay locked forever:</p>
+<p>Open <em>Settings → Enter Privacy Mode</em>, type <code>00000000</code> (eight zeros) as the password and press
+<strong>=</strong>. You will be asked to confirm, and then to authenticate as the device owner (Face&nbsp;ID,
+Touch&nbsp;ID or your device passcode). Once that succeeds:</p>
+<ul>
+  <li>everything in the <strong>Hidden</strong> area is erased — this cannot be undone;</li>
+  <li>both passwords are cleared, so the app returns to its initial state and you can set up new ones;</li>
+  <li>the <strong>Normal</strong> and <strong>Fake</strong> areas are left untouched.</li>
+</ul>
+<p>The same code works on the launch screen if you set an entry key. Requiring device-owner authentication is what
+keeps this from being a way for someone else to destroy your content: knowing the code is not enough.</p>
+<p>Note that deleting and reinstalling the app does <strong>not</strong> clear your passwords either: iOS keeps
+Keychain items when an app is removed, so the old passwords would still be asked for. Please keep them somewhere
+safe.</p>
 
 <h3>Where are my files stored? Are they uploaded anywhere?</h3>
 <p>Entirely on your device, inside the app's private storage, and excluded from iCloud and computer backups. Nothing
